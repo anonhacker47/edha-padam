@@ -24,7 +24,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture Overview
 
-This is a React application that visualizes film data using WebGL and a custom Voronoi force simulation called "Voroforce". The app renders thousands of film posters in an interactive force-directed diagram.
+This is a React application that visualizes film data using WebGL and a custom Voronoi force simulation called "Voroforce". The app renders 1,702 Malayalam film posters in an interactive force-directed diagram.
 
 ### Key Components
 

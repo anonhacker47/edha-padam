@@ -2,7 +2,7 @@ const mediaConfig = {
   enabled: true,
   baseUrl: import.meta.env.VITE_TEXTURES_BASE_URL ?? '/media',
   preload: 'first', // 'v0', 'first' or false
-  compressionFormat: 'dds', // or 'ktx'
+  compressionFormat: 'ktx', // or 'ktx'
   versions: [
     {
       cols: 512,

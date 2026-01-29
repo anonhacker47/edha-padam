@@ -56,14 +56,10 @@ const items = [
         </p>
         <br />
         <p>
-          The dataset is made available under the{' '}
+          The film data is made available under the{' '}
           <Link href='http://opendatacommons.org/licenses/by/1.0/'>
             Open Data Commons Attribution License
-          </Link>{' '}
-          and is sourced from{' '}
-          <Link href='https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies/data'>
-            Kaggle's TMDB Movies Dataset
-          </Link>
+          </Link>.
         </p>
         <br />
         <p>
@@ -86,17 +82,9 @@ const items = [
         </p>
         <br />
         <p>
-          This gallery features a collection of the 50,000 most <i>popular*</i>{' '}
-          movies according to <Link href={config.tmdbUrl}>TMDB</Link>, with data
-          current as of early 2025. The movies are sorted by popularity in
-          descending order, starting from the center of the grid and moving
-          outward.
-        </p>
-        <br />
-        <p>
-          <small>
-            <i>*Not to be confused with the highest rated movies</i>
-          </small>
+          Edha Padam features a collection of 1,702 Malayalam movies,
+          visualized in an interactive gallery. Explore the rich history of
+          Malayalam cinema through this unique lens.
         </p>
       </>
     ),
@@ -107,12 +95,30 @@ const items = [
     className: 'hidden mouse:block',
   },
   {
+    title: 'Credits',
+    content: (
+      <>
+        <p>
+          Edha Padam is a fork of the open-source project{' '}
+          <Link href='https://github.com/gnovotny/nothing-to-watch'>
+            nothing-to-watch
+          </Link>, refactored and customized for Malayalam cinema.
+        </p>
+        <br />
+        <p>
+          Original concept and engineering by{' '}
+          <Link href='https://github.com/gnovotny'>Gabriel Novotny</Link>.
+        </p>
+      </>
+    ),
+  },
+  {
     title: 'Technical TL;DR',
     content: (
       <>
         <p>
-          This is an experimental gallery designed to visualize tens of
-          thousands of images as a Voronoi diagram. The Voronoi seeds are
+          This is an experimental gallery designed to visualize thousands of
+          images as a Voronoi diagram. The Voronoi seeds are
           generated using a custom grid-constrained force graph layout. The
           simulation layer runs in JavaScript with multithreading support, while
           the visualization layer uses WebGL2.
@@ -260,7 +266,7 @@ export const About = () => {
     >
       <ScrollArea
         className='not-landscape:w-full not-landscape:rounded-t-3xl bg-background/60 lg:w-full lg:rounded-3xl landscape:h-full landscape:rounded-l-3xl'
-        innerClassName='max-h-[calc(100vh-var(--spacing)*6*2)]'
+        innerClassName='max-h-[calc(100vh-var(--spacing)62)]'
       >
         <Accordion
           type='multiple'
